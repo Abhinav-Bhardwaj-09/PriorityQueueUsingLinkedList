@@ -10,10 +10,10 @@ package Nodes;
 public class Node {
     private String Name;
     private int Roll ;
-    private int CPI;
+    private double CPI;
     private Node next;
 
-    public Node(String name, int roll, int CPI, Node next) {
+    public Node(String name, int roll, double CPI) {
         Name = name;
         Roll = roll;
         this.CPI = CPI;
@@ -37,11 +37,11 @@ public class Node {
         Roll = roll;
     }
 
-    public int getCPI() {
+    public double getCPI() {
         return CPI;
     }
 
-    public void setCPI(int CPI) {
+    public void setCPI(double CPI) {
         this.CPI = CPI;
     }
 

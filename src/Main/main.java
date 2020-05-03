@@ -1,5 +1,8 @@
 package Main;
 
+import Nodes.Node;
+import Priority_Queue.PriorityQueue;
+
 /**
  * Created by IntelliJ IDEA.
  * User: Abhinav Bhardwaj
@@ -8,4 +11,13 @@ package Main;
  */
 
 public class main {
+    public static void main(String[] args) {
+        PriorityQueue PQ = new PriorityQueue();
+        Node node1 = new Node("Abhinav",02,6.9);
+        Node node2 = new Node("abhishek",03,6.8);
+        PQ.enqueue(node1);
+        PQ.enqueue(node2);
+        PQ.display();
+
+    }
 }
