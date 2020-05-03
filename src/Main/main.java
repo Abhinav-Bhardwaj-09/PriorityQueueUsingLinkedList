@@ -25,6 +25,7 @@ public class main {
         PQ.display();
         System.out.println();
         System.out.println();
+        PQ.dequeue();
 
     }
 }
