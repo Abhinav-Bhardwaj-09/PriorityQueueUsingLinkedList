@@ -18,6 +18,11 @@ public class main {
         PQ.enqueue(node1);
         PQ.enqueue(node2);
         PQ.display();
+        System.out.println();
+        System.out.println();
+        Node node3 = new Node("Anvit",01,7);
+        PQ.enqueue(node3);
+        PQ.display();
 
     }
 }
