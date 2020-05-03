@@ -28,6 +28,6 @@ public class main {
         PQ.dequeue();
         System.out.println();
         System.out.println();
-
+        PQ.display();
     }
 }
