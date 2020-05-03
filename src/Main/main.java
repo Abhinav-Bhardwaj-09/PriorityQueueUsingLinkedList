@@ -23,6 +23,8 @@ public class main {
         Node node3 = new Node("Anvit",01,7);
         PQ.enqueue(node3);
         PQ.display();
+        System.out.println();
+        System.out.println();
 
     }
 }
