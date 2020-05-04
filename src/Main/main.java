@@ -52,6 +52,8 @@ public class main {
                 System.out.print("Your queue is : ");
                 PQ.display();
             }
+            else if( choice == 3 ) PQ.dequeue();
+
 
         }
     }
