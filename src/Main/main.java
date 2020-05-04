@@ -55,6 +55,9 @@ public class main {
             else if( choice == 3 ) PQ.dequeue();
 
             else if ( choice == 4 ){
+                flag = false;
+                System.out.println("Thanks for using...");
+            }
 
 
         }
