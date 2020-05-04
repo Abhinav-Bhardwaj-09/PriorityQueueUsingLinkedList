@@ -1,6 +1,6 @@
 package Priority_Queue;
 
-import Nodes.Node;
+import Student.Student;
 
 /**
  * Created by IntelliJ IDEA.
@@ -10,8 +10,8 @@ import Nodes.Node;
  */
 
 public class PriorityQueue {
-    Node front ;
-    Node rear ;
+    Student front ;
+    Student rear ;
 
     public PriorityQueue() {
         this.front = null;
@@ -19,18 +19,18 @@ public class PriorityQueue {
     }
 
 
-    public void enqueue (Node newnode){
-        if ( front == null || newnode.getCPI() < front.getCPI() ){
-            newnode.setNext(front);
-            front = newnode;
+    public void enqueue (Student NewNode){
+        if ( front == null || NewNode.getCPI() < front.getCPI() ){
+            NewNode.setNext(front);
+            front = NewNode;
         }
         else{
-            Node temp = front ;
-            while ( temp.getNext() != null && temp.getNext().getCPI() <= newnode.getCPI()) {
+            Student temp = front ;
+            while ( temp.getNext() != null && temp.getNext().getCPI() <= NewNode.getCPI()) {
                 temp = temp.getNext();
             }
-            newnode.setNext(temp.getNext());
-            temp.setNext(newnode);
+            NewNode.setNext(temp.getNext());
+            temp.setNext(NewNode);
         }
     }
 
@@ -45,17 +45,18 @@ public class PriorityQueue {
             display();
         }
         else {
-            System.out.println("List is ");
+            System.out.println("List is empty...");
         }
     }
 
 
     public void display(){
-        Node temp = front;
+        Student temp = front;
         while ( temp!= null ){
             System.out.print(temp.getRoll() + ". ");
             System.out.println(temp.getName());
             temp = temp.getNext();
+            if (temp != null) System.out.print("                ");
         }
     }
 }

@@ -1,4 +1,4 @@
-package Nodes;
+package Student;
 
 /**
  * Created by IntelliJ IDEA.
@@ -7,16 +7,16 @@ package Nodes;
  * Time: 12:13
  */
 
-public class Node {
+public class Student {
     private String Name;
     private int Roll ;
     private double CPI;
-    private Node next;
+    private Student next;
 
-    public Node(String name, int roll, double CPI) {
-        Name = name;
-        Roll = roll;
-        this.CPI = CPI;
+    public Student(String name, int roll, double CPI) {
+        setName(name);
+        setRoll(roll);
+        setCPI(CPI);
         this.next = null;
     }
 
@@ -45,11 +45,11 @@ public class Node {
         this.CPI = CPI;
     }
 
-    public Node getNext() {
+    public Student getNext() {
         return next;
     }
 
-    public void setNext(Node next) {
+    public void setNext(Student next) {
         this.next = next;
     }
 }

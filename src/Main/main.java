@@ -1,7 +1,9 @@
 package Main;
 
-import Nodes.Node;
+import Student.Student;
 import Priority_Queue.PriorityQueue;
+
+import java.util.Scanner;
 
 /**
  * Created by IntelliJ IDEA.
@@ -13,21 +15,19 @@ import Priority_Queue.PriorityQueue;
 public class main {
     public static void main(String[] args) {
         PriorityQueue PQ = new PriorityQueue();
-        Node node1 = new Node("Abhinav",02,6.9);
-        Node node2 = new Node("abhishek",03,6.8);
-        PQ.enqueue(node1);
-        PQ.enqueue(node2);
-        PQ.display();
-        System.out.println();
-        System.out.println();
-        Node node3 = new Node("Anvit",01,7);
-        PQ.enqueue(node3);
-        PQ.display();
-        System.out.println();
-        System.out.println();
-        PQ.dequeue();
-        System.out.println();
-        System.out.println();
-        PQ.display();
+        Scanner sc = new Scanner(System.in);
+        String name ;
+        int roll,choice ;
+        double CPI ;
+        boolean flag = true;
+        System.out.print("Enter the name of the student : ");
+        name = sc.next();
+        System.out.print("Enter roll number : ");
+        roll = sc.nextInt();
+        System.out.print("Enter CPI : ");
+        CPI = sc.nextDouble();
+        Student student = new Student(name,roll,CPI);
+        PQ.enqueue(student);
+
     }
 }
