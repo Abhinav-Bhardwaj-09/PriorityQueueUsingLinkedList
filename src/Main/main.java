@@ -31,6 +31,12 @@ public class main {
         while(flag){
             System.out.println();
             System.out.println();
+            System.out.println("Press 1 : To enter details of more students.");
+            System.out.println("Press 2 : To display the queue.");
+            System.out.println("Press 3 : To perform dequeue on queue.");
+            System.out.println("Press 4 : To exit.");
+            System.out.print("Enter your choice : ");
+            choice = sc.nextInt();
 
         }
     }
