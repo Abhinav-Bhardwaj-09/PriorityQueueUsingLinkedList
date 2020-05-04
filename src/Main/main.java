@@ -54,6 +54,8 @@ public class main {
             }
             else if( choice == 3 ) PQ.dequeue();
 
+            else if ( choice == 4 ){
+
 
         }
     }
