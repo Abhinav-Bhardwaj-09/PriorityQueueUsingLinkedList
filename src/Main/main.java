@@ -48,6 +48,10 @@ public class main {
                 student = new Student(name,roll,CPI);
                 PQ.enqueue(student);
             }
+            else if ( choice == 2 ) {
+                System.out.print("Your queue is : ");
+                PQ.display();
+            }
 
         }
     }
