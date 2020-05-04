@@ -28,6 +28,8 @@ public class main {
         CPI = sc.nextDouble();
         Student student = new Student(name,roll,CPI);
         PQ.enqueue(student);
+        while(flag){
 
+        }
     }
 }
