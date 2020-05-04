@@ -59,9 +59,9 @@ public class main {
                 System.out.println("Thanks for using...");
             }
             else {
+                System.out.println(" WARNING  !!!  Please enter a valid choice...");
 
             }
-
         }
     }
 }
