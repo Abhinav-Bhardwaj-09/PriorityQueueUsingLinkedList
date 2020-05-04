@@ -60,7 +60,7 @@ public class main {
             }
             else {
                 System.out.println(" WARNING  !!!  Please enter a valid choice...");
-
+                System.out.println();
             }
         }
     }
