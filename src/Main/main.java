@@ -29,6 +29,8 @@ public class main {
         Student student = new Student(name,roll,CPI);
         PQ.enqueue(student);
         while(flag){
+            System.out.println();
+            System.out.println();
 
         }
     }
