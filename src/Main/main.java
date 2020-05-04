@@ -37,6 +37,17 @@ public class main {
             System.out.println("Press 4 : To exit.");
             System.out.print("Enter your choice : ");
             choice = sc.nextInt();
+            if ( choice == 1 ){
+                System.out.println();
+                System.out.print("Enter the name of the student : ");
+                name = sc.next();
+                System.out.print("Enter roll number : ");
+                roll = sc.nextInt();
+                System.out.print("Enter CPI : ");
+                CPI = sc.nextDouble();
+                student = new Student(name,roll,CPI);
+                PQ.enqueue(student);
+            }
 
         }
     }
